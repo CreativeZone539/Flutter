@@ -201,8 +201,9 @@ class HomeActivity extends StatelessWidget {
                     Text('MOSAEB', style: TextStyle(color: Colors.white70)),
                 accountEmail: Text('info@mosaeb.com',
                     style: TextStyle(color: Colors.white60)),
-                currentAccountPicture: Image.asset(
-                    '/images/GloriousMos.jpg'),
+                currentAccountPicture: Image.network(
+                    'https://scontent.fdac15-1.fna.fbcdn.net/v/t39.30808-6/325882583_482817727354561_7829734624195048675_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_ohc='
+                        'tOLVTm6LZTEAX9FSrdN&_nc_ht=scontent.fdac15-1.fna&oh=00_AfDdYakKAS-xEht4ICKUWOGhzORRnVGXZ8wThmjCVe758Q&oe=63D1B8CC'),
               ),
             ),
             ListTile(
