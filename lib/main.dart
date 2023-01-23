@@ -29,6 +29,25 @@ class HomeActivity extends StatelessWidget {
             content: Text(message)
         ));}
 
+  
+    final ButtonStyle buttonStyle1 = ElevatedButton.styleFrom(
+    padding: EdgeInsets.all(10),
+    backgroundColor: Colors.green,
+    foregroundColor: Colors.white,
+    shape: RoundedRectangleBorder(
+      borderRadius: BorderRadius.all(Radius.circular(5)),
+    ),
+  );
+  final ButtonStyle buttonStyle2 = ElevatedButton.styleFrom(
+    padding: EdgeInsets.all(10),
+    backgroundColor: Colors.red,
+    foregroundColor: Colors.white,
+    shape: RoundedRectangleBorder(
+      borderRadius: BorderRadius.all(Radius.circular(5)),
+    ),
+  );
+
+
   alertDialogue1(context) {
     return showDialog(
       context: context,
@@ -38,17 +57,19 @@ class HomeActivity extends StatelessWidget {
           title: Text("Confirmation"),
           content: Text('Do you really want to submit it?'),
           actions: [
-            TextButton(
+            ElevatedButton(
                 onPressed: () {
                   mySnackBar('Submitted successfully', context);
                   Navigator.of(context).pop();
                 },
+                style: buttonStyle1,
                 child: Text('Yes')),
-            TextButton(
+            ElevatedButton(
                 onPressed: () {
                   mySnackBar('The form is not submitted', context);
                   Navigator.of(context).pop();
                 },
+                style: buttonStyle2,
                 child: Text('No')),
           ],
         ));
@@ -60,39 +81,14 @@ class HomeActivity extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final ButtonStyle buttonStyle1 = ElevatedButton.styleFrom(
-      padding: EdgeInsets.all(10),
-      backgroundColor: Colors.amber,
-      foregroundColor: Colors.white,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.all(Radius.circular(18)),
-      ),
-    );
-    final ButtonStyle buttonStyle2 = ElevatedButton.styleFrom(
-      padding: EdgeInsets.all(10),
-      foregroundColor: Colors.white,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.all(Radius.circular(18)),
-      ),
-    );
-    final ButtonStyle buttonStyle3 = TextButton.styleFrom(
-      padding: EdgeInsets.all(10),
-      foregroundColor: Colors.white,
-    );
-    final ButtonStyle buttonStyle4 = OutlinedButton.styleFrom(
-      padding: EdgeInsets.all(10),
-      foregroundColor: Colors.white,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.all(Radius.circular(18)),
-      ),
-    );
+
     final ButtonStyle formSubmit = ElevatedButton.styleFrom(
       padding: EdgeInsets.all(10),
       minimumSize: Size(double.infinity, 60),
       backgroundColor: Colors.green.shade500,
       foregroundColor: Colors.white,
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.all(Radius.circular(18)),
+        borderRadius: BorderRadius.all(Radius.circular(5)),
       ),
     );
 
