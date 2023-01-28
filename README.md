@@ -1,6 +1,6 @@
-# first_app
+# assignments
 
-My very first flutter project
+The history of all my assignments in Flutter
 
 ## Getting Started
 
