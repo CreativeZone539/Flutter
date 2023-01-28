@@ -1,6 +1,6 @@
-# first_app
+# Sample App
 
-My very first flutter project
+My first basics of the flutter project
 
 ## Getting Started
 
