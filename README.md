@@ -1,4 +1,4 @@
-# assignments
+# Assignments
 
 The history of all my assignments in Flutter
 
